@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Galería de ilustraciones — Life is Strange: Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --border: #dddddd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .intro {
+      font-size: 0.95rem;
+      max-width: 60ch;
+      margin-top: 1rem;
+      color: #444444;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    figure {
+      margin: 0;
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+    }
+
+    figcaption strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .actions {
+      margin-top: 0.6rem;
+    }
+
+    a.button {
+      display: inline-block;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: transparent;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+
+    a.button:hover {
+      background: #000000;
+      color: #ffffff;
+      border-color: #000000;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Galería de ilustraciones — Life is Strange: Journey</h1>
+
+    <p class="intro">
+      Esta página reúne las ilustraciones en alta resolución incluidas en la edición digital de 
+      <em>Life is Strange: Journey</em>. Las versiones que aparecen en el EPUB están optimizadas para lectura; 
+      aquí puedes verlas con mayor detalle o descargarlas para uso personal.
+    </p>
+
+    <section class="grid">
+      <!-- ILUSTRACIÓN 1 -->
+      <figure>
+        <!-- Si tus imágenes están en la raíz del repositorio, usa solo el nombre del archivo.
+             Si las tienes en una carpeta, por ejemplo "illustrations", usa "illustrations/nombre-archivo.png" -->
+        <img src="death.jpg" alt="Death">
+        <figcaption>
+          <strong>El trinunfo del Adversario</strong>
+          <div class="meta">Pintura digital · Alta resolución</div>
+          <div class="actions">
+            <a class="button" href="death.jpg" download>Descargar imagen</a>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ILUSTRACIÓN 2 -->
+      <figure>
+        <img src="battle.jpg" alt="The Battle">
+        <figcaption>
+          <strong>La Batalla</strong>
+          <div class="meta">Pintura digital · Alta resolución</div>
+          <div class="actions">
+            <a class="button" href="tu-imagen-2.png" download>Descargar imagen</a>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- Copia y pega más bloques <figure> como estos para añadir más ilustraciones -->
+    </section>
+
+    <footer>
+      Uso permitido: visualización y descarga personal no comercial.  
+      Las imágenes forman parte de la obra <em>Life is Strange: Journey</em>.
+    </footer>
+  </main>
+</body>
+</html>
