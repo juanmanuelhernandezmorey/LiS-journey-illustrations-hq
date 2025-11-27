@@ -82,9 +82,11 @@ body {
 .card img {
   display: block;
   width: 100%;
-  height: 220px;         /* altura fija de thumbnail */
-  object-fit: cover;     /* recorta un poco si la proporción no cuadra */
+  height: 360px;     /* altura vertical estilo 3:4 */
+  object-fit: cover; /* recorte elegante y sin distorsión */
+  border-bottom: 1px solid var(--border);
 }
+
 
 /* Bloque de texto dentro de la tarjeta */
 .card figcaption {
