@@ -85,6 +85,7 @@ body {
   height: 360px;     /* altura vertical estilo 3:4 */
   object-fit: cover; /* recorte elegante y sin distorsión */
   border-bottom: 1px solid var(--border);
+  box-shadow: inset 0 1px 8px rgba(0,0,0,0.25);
 }
 
 
