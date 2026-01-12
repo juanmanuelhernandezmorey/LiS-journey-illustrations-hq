@@ -24,6 +24,23 @@ a {
     text-decoration: none; /* Quita el subrayado */
 }
 
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  align-items:center;
+  margin-top: 8px;
+}
+
+.navlink{
+  color: var(--text);
+  text-decoration: none;
+  opacity: .85;
+}
+.navlink:hover{ opacity: 1; text-decoration: underline; }
+.sep{ opacity:.35; }
+
+
 .page {
   max-width: 1100px;
   margin: 0 auto;
